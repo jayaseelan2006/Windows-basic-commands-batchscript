@@ -89,19 +89,9 @@ Save the file and come back to command prompt.
 Now execute as
 BackupScript.bat
 
-<img width="161" alt="ex086" src="https://github.com/jayaseelan2006/Windows-basic-commands-batchscript/assets/151389443/3a4bdf29-9979-4c2d-b503-77f58d83e8cd">
-
-
-
-
-
-
-
 ## OUTPUT
 
-
-
-
+<img width="161" alt="ex086" src="https://github.com/jayaseelan2006/Windows-basic-commands-batchscript/assets/151389443/3a4bdf29-9979-4c2d-b503-77f58d83e8cd">
 
 # RESULT:
 The commands/batch files are executed successfully.
