@@ -26,25 +26,42 @@ Execute the necessary commands/batch file for the desired output.
 # WINDOWS COMMANDS:
 ## Exercise 1: Basic Directory and File Operations
 Create a directory named "MyLab" on the desktop.
+mkdir %userprofile%\Desktop\MyLab
+<img width="202" alt="ex08 1" src="https://github.com/jayaseelan2006/Windows-basic-commands-batchscript/assets/151389443/98040f6d-4cd9-4c62-9df9-6893b2472e28">
 
 
 ## COMMAND AND OUTPUT
 
 Change to the "MyLab" directory and create an empty text file named "MyFile.txt" inside it.
+cd %userprofile%\Desktop\MyLab
+type nul > MyFile.txt
+
+<img width="169" alt="ex082" src="https://github.com/jayaseelan2006/Windows-basic-commands-batchscript/assets/151389443/80e67b0c-e23f-4c5a-9c41-2572ea30bd43">
 
 
 ## COMMAND AND OUTPUT
 
 List the contents of the "MyLab" directory.
+dir %userprofile%\Desktop\MyLab
+<img width="205" alt="ex083" src="https://github.com/jayaseelan2006/Windows-basic-commands-batchscript/assets/151389443/af828746-aa6f-4d93-a024-64018daceece">
+
 
 
 ## COMMAND AND OUTPUT
 
 Copy "MyFile.txt" to a new folder named "Backup" on the desktop.
+mkdir %userprofile%\Desktop\Backup
+copy MyFile.txt %userprofile%\Desktop\Backup
+![Uploading ex084.png…]()
+
 
 ## COMMAND AND OUTPUT
 
 Move the "MyLab" directory to the "Documents" folder.
+move MyLab ..\Deocuments
+<img width="176" alt="ex085" src="https://github.com/jayaseelan2006/Windows-basic-commands-batchscript/assets/151389443/4661e13c-7ec3-4d94-99b4-97db91e3c95e">
+
+
 
 
 ## COMMAND AND OUTPUT
@@ -52,6 +69,17 @@ Move the "MyLab" directory to the "Documents" folder.
 
 ## Exercise 2: Advanced Batch Scripting
 Create a batch script named "BackupScript.bat" that creates a backup of files with the ".docx" extension from the "Documents" folder to a new folder named "DocBackup" on the desktop.
+@echo off
+mkdir %userprofile%\Desktop\DocBackup
+copy %userprofile%\Documents\*.docx %userprofile%\Desktop\DocBackup
+del %userprofile%\Documents\DocBackup\*.docx
+echo Backup and deletion completed successfully!
+
+Save the file and come back to command prompt.
+Now execute as
+BackupScript.bat
+
+<img width="161" alt="ex086" src="https://github.com/jayaseelan2006/Windows-basic-commands-batchscript/assets/151389443/3a4bdf29-9979-4c2d-b503-77f58d83e8cd">
 
 
 
